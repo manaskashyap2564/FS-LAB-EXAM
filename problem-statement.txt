@@ -1,0 +1,29 @@
+QUESTION SET - 0
+Create schema-models based on the structure given below (User and Recipe).
+→ Apply client-side validation using Bootstrap.
+Implement full CRUD functionality for recipes with the following routes:
+● GET /recipes
+● GET /recipe/new
+● POST /recipe
+● GET /recipes/:id
+● GET /recipes/:id/edit
+● PUT /recipes/:id
+● DELETE /recipes/:id
+Note: The dishName field should not be editable once created.
+Forms must use the following fields:
+● User: username, password, fullName, country, dietaryPreference
+● Recipe: dishName, ingredients (comma-separated), cookingTime,
+difficulty, instructions
+Use Bootstrap to validate required fields, correct number types, and option selection.
+Integrate authentication using Passport with:
+● /register
+● /login
+● /logout
+Once logged in, show the user's dietaryPreference in the top-right corner.
+Use express-session and passport-local to manage login sessions.
+Organize your project with the following folder structure:
+● public/ – CSS and Bootstrap files
+● views/ – templates like new-recipe.ejs, edit-recipe.ejs, etc.
+● models/ – user.js and recipe.js
+● routes/ – separate route files for user and recipe
+Do not include any dummy or seeded data.
